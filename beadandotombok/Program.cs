@@ -5,7 +5,10 @@
         static int[] tomb = new int[10];
         static bool[] tomb2 = new bool[15];
         static int[] tomb3 = new int[5];
+        
+        
         static Random r = new Random();
+
     static void feladat1()
         {
             for (int i = 0; i < tomb.Length; i++)
@@ -61,11 +64,35 @@
             Console.WriteLine($"  {bekert + 1} elem értéke  {tomb3[bekert]}");
 
         }
+        static void feladat14()
+        {
+            Console.WriteLine("tömb hossza ");
+            int N  = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("veletlen szamok kezdö erteke ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("veletlen szamokk végsö értéke ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            int[] tomb14 = new int[N];
+            Console.WriteLine("=I==================I=");
+            Console.WriteLine( " I sorszam I érték  I ");
+            Console.WriteLine("=I==================I=");
+            for (int i = 0; i < tomb14.Length; i++)
+            {
+                int szam = r.Next(a, b + 1);
+                tomb14[i] = szam;
+                Console.WriteLine( "🪵🧱🧱🧱🧱🧱🧱🧱🧱🧱I=");
+                Console.WriteLine("🪵");
+                Console.WriteLine( "🪵🧱🧱🧱🧱🧱🧱🧱🧱🧱I=");
+            } 
+
+
+        }
             static void Main(string[] args)
         {
-            feladat1();
-            feladat2();
-            feladat5();
+            //feladat1();
+            //feladat2();
+            //feladat5();
+            feladat14();
         }
     }
 }
